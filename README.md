@@ -1,6 +1,5 @@
 # Emulator Setup Script
-
-This script automates the setup process to connect to an Android emulator through a specified port using telnet. By default, the script sets up the connection for port `14550`. It reads the authentication token from the `.emulator_console_auth_token` file in the user's home directory and uses it to authenticate with the emulator. The script then adds a UDP redirection to the emulator and exits the telnet session.
+This script automates the setup process to connect to an Android emulator through a specified port using telnet. By default, the script sets up the connection for port `14550` and uses the emulator's default port `5554`. You can view other emulator ports by running `adb devices`. The script reads the authentication token from the `.emulator_console_auth_token` file in the user's home directory and uses it to authenticate with the emulator. It then adds a UDP redirection to the emulator and exits the telnet session.
 
 ## Features
 
